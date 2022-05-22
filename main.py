@@ -187,6 +187,8 @@ class Ui_MainWindow(object):
         else:
             msg = self.inputText.text()
             msg += "|"
+
+            #размерность матрицы
             n = int(math.ceil((msg.__len__() / 4) ** (1 / 2)))
 
             codedRes = codeByCardanGrille(msg, n)
